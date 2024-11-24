@@ -28,7 +28,7 @@ class ChatModel:
             device (str): Устройство для вычислений ('cuda' или 'cpu')
         """
         # Получаем токен доступа из переменных окружения
-        ACCESS_TOKEN = os.getenv("ACCESS_TOKEN")
+        ACCESS_TOKEN = os.getenv("HF_TOKEN")
 
         # Инициализируем токенизатор
         self.tokenizer = AutoTokenizer.from_pretrained(
